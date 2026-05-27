@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>reseñas - Panchisco</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="prenav">
+			<img src="./img/ELDAN.png" > /* logo, hay que cambiar */
+			<hr>
+			</div>
+		<nav>
+			<ul>
+				<li></li>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="productos.html">Productos</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+				<li><a href="reseñas.html">Reseñas</a></li>
+				
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Reseñas</h1>
+			<hr>
+
+            
+            <div class="reseña-box">
+            <h2>Dejá tu reseña ⭐</h2>
+
+            <input type="email" placeholder="Tu mail" class="input-mail" id="mail">
+
+            <textarea placeholder="Escribí tu reseña..." class="input-reseña" id="texto"></textarea>
+
+            <div class="rating">
+                <input type="radio" name="star" id="star5" value="5"><label for="star5">★</label>
+                <input type="radio" name="star" id="star4" value="4"><label for="star4">★</label>
+                <input type="radio" name="star" id="star3" value="3"><label for="star3">★</label>
+                <input type="radio" name="star" id="star2" value="2"><label for="star2">★</label>
+                <input type="radio" name="star" id="star1" value="1"><label for="star1">★</label>
+            </div>
+
+            <button onclick="enviarResena()">Enviar</button>
+            </div>
+
+			<section class="reseñas" id="lista-resenas">
+
+				<div class="comentario">
+					<p>⭐️⭐️⭐️⭐️⭐️</p>
+					<div class="fecha">03 may. 2026</div>
+					<p>El mejor pancho que comí en mi vida. La salchicha es de primera y el pan siempre fresco. Panchisco no falla.</p>
+				</div>
+
+				<div class="comentario">
+					<p>⭐️⭐️⭐️⭐️⭐️</p>
+					<div class="fecha">18 abr. 2026</div>
+					<p>Fui con mis hijos y quedaron encantados. Los panchos con cheddar y panceta son una locura. Volvemos siempre.</p>
+				</div>
+
+				<div class="comentario">
+					<p>⭐️⭐️⭐️⭐️⭐️</p>
+					<div class="fecha">02 mar. 2026</div>
+					<p>Atención rápida, precio justo y sabor increíble. Panchisco es lo mejor del barrio sin dudas.</p>
+				</div>
+
+				<div class="comentario">
+					<p>⭐️⭐️⭐️⭐️⭐️</p>
+					<div class="fecha">15 ene. 2026</div>
+					<p>Me recomendaron Panchisco y entiendo por qué. El pancho completo con todo es espectacular. 10 puntos.</p>
+				</div>
+
+				<div class="comentario">
+					<p>⭐️⭐️⭐️⭐️☆</p>
+					<div class="fecha">28 nov. 2025</div>
+					<p>Muy ricos los panchos, especialmente el especial con chimichurri. Le faltó un poco más de salsa pero igual genial.</p>
+				</div>
+
+				<div class="comentario">
+					<p>⭐️⭐️⭐️⭐️⭐️</p>
+					<div class="fecha">10 oct. 2025</div>
+					<p>Pasé por casualidad y no me arrepiento para nada. El pan es artesanal y se nota. Panchisco tiene mucho nivel.</p>
+				</div>
+
+				<div class="comentario">
+					<p>⭐️⭐️⭐️⭐️☆</p>
+					<div class="fecha">05 ago. 2025</div>
+					<p>Buenísimo, aunque a veces hay que esperar un poco. Vale la pena la espera porque el pancho llega perfecto.</p>
+				</div>
+			</section>		
+	</main>
+<footer>
+	<hr>
+	<h4>Los mejores panchos</h4>
+</footer>
+<script src="script/logic.js"></script>
+</body>
+</html>
