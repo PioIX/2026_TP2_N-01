@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 *{
     margin:0;
     padding:0;
@@ -12,50 +11,11 @@ body{
     min-height:100vh;
 }
 
-/* ================= HEADER ================= */
-
-/* ================= HEADER ================= */
+/*HEADER*/
 
 header{
     background:linear-gradient(135deg,#ffb703,#fb8500);
     box-shadow:0 3px 15px rgba(0,0,0,.15);
-}
-
-.prenav{
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
-    padding:10px 40px;
-}
-
-.prenav img{
-    height:55px;
-    width:auto;
-}
-
-nav{
-    padding:10px 0 20px;
-}
-
-nav ul{
-    list-style:none;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:35px;
-    flex-wrap:wrap;
-}
-
-nav a{
-    color:white;
-    font-size:22px;
-    font-weight:700;
-    transition:.3s;
-    text-decoration:none;
-}
-
-nav a:hover{
-    color:#222;
 }
 
 .prenav{
@@ -93,7 +53,7 @@ nav a:hover{
     color:#222;
 }
 
-/* ================= MAIN ================= */
+/*MAIN*/
 
 main{
     width:90%;
@@ -121,7 +81,7 @@ hr{
     margin:20px 0;
 }
 
-/* ================= INDEX ================= */
+/*INDEX*/
 
 .index-content{
     background:white;
@@ -139,19 +99,42 @@ hr{
     margin-bottom:8px;
 }
 
-/* ================= PRODUCTOS ================= */
+.marcas{
+    display:flex;
+    gap:25px;
+    margin-top:30px;
+    margin: auto;
+    padding: auto;
+    align-items: center;
+}
+
+.marcas div{
+    height: 100%;
+    margin: auto;
+    padding: auto;
+}
+
+.marcas img{
+    height: 12rem;
+    width:auto;
+    border-radius:20px;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;    
+    }
+
+/*PRODUCTOS*/
 
 .productos{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns:1fr 1fr 1fr;
     gap:25px;
     margin-top:30px;
-	grid-template-columns: 1fr 1fr 1fr;
 }
 
 .productos img{
     width:100%;
-	height: 100%;
+    height: 100%;
     border-radius:20px;
     background:white;
     padding:15px;
@@ -163,7 +146,7 @@ hr{
     transform:translateY(-5px);
 }
 
-/* ================= FORMULARIO ================= */
+/*FORMULARIO*/
 
 form{
     max-width:700px;
@@ -206,7 +189,7 @@ button:hover{
     background:#ffb703;
 }
 
-/* ================= RESEÑAS ================= */
+/*RESEÑAS*/
 
 .reseña-box{
     background:white;
@@ -242,256 +225,10 @@ button:hover{
     color:#ccc;
     cursor:pointer;
     transition:.2s;
-=======
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-}
-
-body {
-    background: #FDF6EC;
-    color: #1A1A1A;
-}
-
-/* HEADER */
-
-header {
-    background: #1A1A1A;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.prenav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 12px 24px;
-    border-bottom: 2px solid #E8A020;
-}
-
-.prenav hr { display: none; }
-
-header img {
-    height: 60px;
-    width: auto;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-}
-
-nav ul li:empty { display: none; }
-
-nav a {
-    color: #ccc;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 12px 20px;
-    display: block;
-    transition: color 0.2s;
-}
-
-nav a:hover { color: #E8A020; }
-
-/* MAIN */
-
-main {
-    min-height: 80vh;
-    padding-bottom: 60px;
-}
-
-h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 64px;
-    text-align: center;
-    padding: 36px 20px 8px;
-}
-
-h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 30px;
-    color: #333;
-    text-align: center;
-    margin-bottom: 16px;
-}
-
-hr {
-    border: none;
-    border-top: 2px solid #E8A020;
-    width: 70px;
-    margin: 0 auto 32px;
-}
-
-/* INDEX */
-
-.index-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 24px 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-}
-
-.index-content h2 { text-align: left; }
-
-.index-content ul { list-style: none; }
-
-.index-content li {
-    padding: 9px 0 9px 26px;
-    position: relative;
-    border-bottom: 1px solid rgba(232,160,32,0.2);
-    font-size: 15px;
-}
-
-.index-content li::before {
-    content: '🌭';
-    position: absolute;
-    left: 0;
-}
-
-.marcas {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    padding: 40px 24px;
-    background: #1A1A1A;
-}
-
-.marcas h2 { color: #E8A020; }
-
-/* PRODUCTOS */
-
-.productos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 24px;
-    padding: 10px 40px 40px;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.productos img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-    transition: transform 0.25s;
-}
-
-.productos img:hover { transform: translateY(-5px); }
-
-/* CONTACTO */
-
-main form {
-    max-width: 560px;
-    margin: 0 auto;
-    padding: 0 24px 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-main form input,
-main form textarea {
-    width: 100%;
-    padding: 13px 16px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    font-size: 15px;
-    background: #fff;
-    transition: border-color 0.2s;
-}
-
-main form input:focus,
-main form textarea:focus {
-    outline: none;
-    border-color: #E8A020;
-}
-
-main form textarea { min-height: 120px; resize: vertical; }
-
-main form button {
-    background: #E8A020;
-    color: #1A1A1A;
-    border: none;
-    padding: 13px 28px;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: 700;
-    cursor: pointer;
-    align-self: flex-start;
-    transition: background 0.2s;
-}
-
-main form button:hover { background: #d08a10; }
-
-/* RESEÑAS */
-
-.reseña-box {
-    width: 90%;
-    max-width: 680px;
-    margin: 0 auto 40px;
-    background: #fff;
-    padding: 28px;
-    border-radius: 12px;
-    border-top: 4px solid #E8A020;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-}
-
-.reseña-box h2 { text-align: left; margin-bottom: 18px; }
-
-.input-mail,
-.input-reseña {
-    width: 100%;
-    padding: 12px 15px;
-    border: 2px solid #e0e0e0;
-    border-radius: 8px;
-    margin-bottom: 12px;
-    font-size: 15px;
-    background: #fafafa;
-    transition: border-color 0.2s;
-}
-
-.input-mail:focus,
-.input-reseña:focus {
-    outline: none;
-    border-color: #E8A020;
-}
-
-.input-reseña { min-height: 120px; resize: vertical; }
-
-.rating {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    gap: 4px;
-    margin-bottom: 18px;
-}
-
-.rating input { display: none; }
-
-.rating label {
-    font-size: 32px;
-    color: #ddd;
-    cursor: pointer;
-    transition: color 0.15s;
->>>>>>> Stashed changes
 }
 
 .rating label:hover,
 .rating label:hover ~ label,
-<<<<<<< Updated upstream
 .rating input:checked ~ label{
     color:#ffb703;
 }
@@ -515,7 +252,7 @@ main form button:hover { background: #d08a10; }
     margin:10px 0;
 }
 
-/* ================= FOOTER ================= */
+/*FOOTER*/
 
 footer{
     background:#222;
@@ -529,7 +266,7 @@ footer hr{
     display:none;
 }
 
-/* ================= RESPONSIVE ================= */
+/*RESPONSIVE*/
 
 @media(max-width:768px){
 
@@ -548,78 +285,4 @@ footer hr{
     .prenav img{
         height:65px;
     }
-=======
-.rating input:checked ~ label { color: #E8A020; }
-
-.reseña-box button {
-    background: #1A1A1A;
-    color: #E8A020;
-    border: none;
-    padding: 12px 26px;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-.reseña-box button:hover { background: #333; }
-
-.reseñas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
-    padding: 8px 40px 40px;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.comentario {
-    background: #fff;
-    border-radius: 12px;
-    padding: 22px;
-    border-left: 4px solid #E8A020;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.07);
-    transition: transform 0.25s;
-}
-
-.comentario:hover { transform: translateY(-4px); }
-
-.fecha {
-    color: #888;
-    font-size: 13px;
-    margin-bottom: 10px;
-    font-style: italic;
-}
-
-.comentario p { color: #444; line-height: 1.6; font-size: 14px; }
-
-/* FOOTER */
-
-footer {
-    background: #1A1A1A;
-    color: #888;
-    text-align: center;
-    padding: 22px 20px;
-}
-
-footer hr { margin-bottom: 12px; }
-
-footer h4 { font-size: 13px; font-weight: 400; letter-spacing: 0.06em; }
-
-/* RESPONSIVE */
-
-@media (max-width: 768px) {
-    h1 { font-size: 48px; }
-    nav ul { flex-wrap: wrap; }
-    nav a { padding: 10px 12px; font-size: 12px; }
-    .index-content { grid-template-columns: 1fr; }
-    .reseñas, .productos { padding-left: 20px; padding-right: 20px; }
-}
-
-@media (max-width: 480px) {
-    h1 { font-size: 38px; }
-    header img { height: 46px; }
-    main form button, .reseña-box button { width: 100%; }
->>>>>>> Stashed changes
 }
