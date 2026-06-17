@@ -47,6 +47,7 @@ nav a{
     font-size:18px;
     font-weight:bold;
     transition:.3s;
+    text-decoration: none;
 }
 
 nav a:hover{
@@ -100,7 +101,8 @@ hr{
 }
 
 .marcas{
-    display:flex;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
     gap:25px;
     margin-top:30px;
     margin: auto;
@@ -112,6 +114,7 @@ hr{
     height: 100%;
     margin: auto;
     padding: auto;
+    text-align: center;
 }
 
 .marcas img{
@@ -276,6 +279,11 @@ footer hr{
 
     nav ul{
         gap:15px;
+    }
+
+    .productos, .marcas{
+        display: grid;
+        grid-template-columns:1fr;
     }
 
     .prenav{
